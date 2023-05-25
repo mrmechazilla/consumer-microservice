@@ -20,7 +20,7 @@ public class PackageBox {
     private String boxDescription;
     @OneToMany(mappedBy = "packagebox")
     private List<Package> packages;
-    //@ManyToOne
-    //@JoinColumn(name = "PROCESSOR_ID", referencedColumnName = "processorId")
-    //private PackageProcessor packageprocessor;
+    @ManyToOne
+    @JoinColumn(name = "PROCESSOR_ID", referencedColumnName = "processorId")
+    private PackageProcessor packageprocessor;
 }

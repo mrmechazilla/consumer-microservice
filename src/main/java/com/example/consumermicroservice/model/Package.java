@@ -18,7 +18,10 @@ public class Package {
     private double packageHeight;
     private double packageWidth;
     private double packagePrice;
+    @Enumerated(EnumType.STRING)
     private ShippingTierEnum shippingTier;
+    private String departureAddress;
+    private String arrivalAddress;
     @ManyToOne
     @JoinColumn(name = "EVENT_ID", referencedColumnName = "eventId")
     private Event event;

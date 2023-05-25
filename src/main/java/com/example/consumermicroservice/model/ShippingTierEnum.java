@@ -1,7 +1,7 @@
 package com.example.consumermicroservice.model;
 
 public enum ShippingTierEnum {
-    NORMAL,
+    STANDARD,
     PREMIUM,
     VIP
 }

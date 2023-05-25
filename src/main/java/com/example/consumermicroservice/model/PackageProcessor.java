@@ -10,13 +10,13 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-//@Entity
+@Entity
 public class PackageProcessor {
-   //@Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long processorId;
     private String fullname;
     private String description;
-    //@OneToMany(mappedBy = "packageprocessor")
-    //private List<PackageBox> packageBoxes;
+    @OneToMany(mappedBy = "packageprocessor")
+    private List<PackageBox> packageBoxes;
 }
